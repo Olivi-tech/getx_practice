@@ -34,7 +34,7 @@ class ListScreen extends StatelessWidget {
                 ),
                 trailing: Obx(
                   () {
-                    log('/////////called/////icon');
+                    log('/////////called/////iconx');
 
                     return Icon(
                       Icons.favorite,

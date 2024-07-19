@@ -82,6 +82,17 @@ class ScreenOne extends StatelessWidget {
                     ),
                     child: const Text('Go to increment page'),
                   ),
+                  const Gap(20),
+                  OutlinedButton(
+                    style: ButtonStyle(
+                      backgroundColor:
+                          WidgetStatePropertyAll(Colors.green[200]),
+                    ),
+                    onPressed: () async => Get.toNamed(
+                      AppRoutes.login,
+                    ),
+                    child: const Text('Go to login page'),
+                  ),
                 ],
               ),
             ),

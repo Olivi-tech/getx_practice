@@ -2,6 +2,7 @@ import 'package:get/get.dart';
 import 'package:getx_practice/counter_screen.dart';
 import 'package:getx_practice/home_screen.dart';
 import 'package:getx_practice/list_screen.dart';
+import 'package:getx_practice/login/login_screen.dart';
 import 'package:getx_practice/screen_one.dart';
 import 'package:getx_practice/screen_two.dart';
 
@@ -11,6 +12,7 @@ class AppRoutes {
   static const screenTwo = '/screenTwo';
   static const increment = '/increment';
   static const listScreen = '/listScreen';
+  static const login = '/login';
 
   /// for transition
   static const Transition transitionRtoL = Transition.rightToLeft;
@@ -42,6 +44,11 @@ class AppRoutes {
         GetPage(
           name: listScreen,
           page: () => const ListScreen(),
+          transition: transitionRtoL,
+        ),
+        GetPage(
+          name: login,
+          page: () => const LoginScreen(),
           transition: transitionRtoL,
         ),
       ];
